@@ -1,0 +1,12 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    max-width: 1600px;
+    margin: 0 auto;
+    &-inner {
+        display: flex;
+        align-items: center;   
+        @media (max-width: 767px){
+            justify-content: space-between;
+        }
+    }
+ }

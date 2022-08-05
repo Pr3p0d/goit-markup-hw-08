@@ -1,0 +1,25 @@
+.btn {
+    display: block;
+    background-color: #2196F3;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    min-height: 50px;
+    border: 0px;
+    margin: 0 auto;
+    font-family: inherit; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color : #ffffff;
+    cursor: pointer;
+    transition:  background-color var(--animation);
+
+    &:hover,
+    &:focus {
+    background-color: #188CE8
+}
+}
