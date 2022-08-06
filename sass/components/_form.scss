@@ -125,7 +125,7 @@
     &__text {
         letter-spacing: 0.03em; 
 
-        @media (min-width: 320px){
+        @media (max-width: 1199px){
             font-size: 12px;
             line-height: 1.17;
         }

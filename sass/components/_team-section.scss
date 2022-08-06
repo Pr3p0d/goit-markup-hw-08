@@ -1,10 +1,8 @@
 .team {
     background-color: var(--background-team-color);
-    @media (min-width: 320px) {
         text-align: center;
-    }
     &__title {
-        @media (min-width: 320px) {
+        @media (max-width: 1199px) {
             margin-bottom: 30px;
         }
         @media (min-width: 1200px){
@@ -29,8 +27,7 @@
     &__item {
         background-color: #fff;
         border-radius: 0px 0px 4px 4px;
-        @media (min-width: 480px) {
-        }
+        
         @media (min-width: 768px) {
         width: calc((100% - 4 * 15px) / 2);
         margin-left: 15px;

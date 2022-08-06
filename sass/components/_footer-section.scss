@@ -18,6 +18,9 @@
         }
     }
     &__container{
+        @media (max-width: 1199px){
+            margin-bottom: 60px;
+        }
         @media (min-width: 768px) and (max-width: 1199px) {
             width: 100%;
             display: flex;
@@ -29,13 +32,14 @@
             align-items: baseline;
         } 
     }
-    &__list {
-        @media (min-width: 320px){
+    &__section{
+        @media (max-width: 767px){
             margin-bottom: 60px;
         }
+         
     }
     &__item:not(:last-child){
-        @media (min-width: 320px){
+        @media (max-width: 1199px){
             margin-bottom: 8px;
         }
         @media (min-width: 1200px){
@@ -45,7 +49,7 @@
     }
     &__address {
         font-style: normal;
-        @media (min-width: 320px) and (max-width: 1199px){
+        @media (max-width: 1199px){
             text-align: center;
         }
     }
@@ -75,12 +79,7 @@
 }
 
 .footer-social {
-    &__block{
-        @media (min-width: 320px) and (max-width: 1199px){
-            text-align: center;
-            margin-bottom: 60px;
-            
-        }
+    &__block{            
         @media (min-width: 1200px){
             margin-left: 70px;
             margin-bottom: 0;
@@ -102,7 +101,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        @media (min-width: 320px) and (max-width: 767px){
+        @media (max-width: 767px){
             align-items: center;
             justify-content: center;
         }
@@ -132,7 +131,7 @@
 
 .subscription {
     &__block{
-        @media (min-width: 320px) and (max-width: 767px){
+        @media (max-width: 767px){
             text-align: center;
             width: 100%;
         }
@@ -161,7 +160,7 @@
 
     }
     &__input {
-        @media (min-width: 320px) and (max-width: 479px){
+        @media (max-width: 479px){
             min-width: 100%;
             max-width: 100%;
             margin-bottom: 20px;
@@ -195,7 +194,7 @@
 
   
     &__button{
-        @media (min-width: 320px) and (max-width: 1199px){
+        @media (max-width: 1199px){
             margin: 0 auto;
         }
         display: flex;

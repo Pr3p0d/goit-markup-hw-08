@@ -1,9 +1,9 @@
 .clients {
-    @media (min-width: 320px) {
+    @media (max-width: 767px) {
         text-align: center;
     }  
     &__title{
-        @media (min-width: 320px) {
+        @media (max-width: 767px) {
             margin-bottom: 30px;
             font-size: 28px;
             line-height: 1.19;
@@ -22,7 +22,7 @@
     }
     
     &__list {
-        @media (min-width: 320px){
+        @media (max-width: 767px){
             margin-left: -15px ;
             margin-right: -15px;
         }
@@ -32,7 +32,7 @@
     }
     
     &__item {
-        @media (min-width: 320px) {
+        @media (max-width: 767px) {
             width: calc((100% - 4 * 15px) / 2);
             margin-left: 15px;
             margin-right: 15px;
