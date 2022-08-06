@@ -38,11 +38,11 @@
              rgba(0, 0, 0, 0.06), 1px 4px 6px 
              rgba(0, 0, 0, 0.16);           
         }
-        &:hover, 
-        &:focus
-         .project-product__box{
+        &:hover  .project-product__box, 
+        &:focus .project-product__box{
             transform: translateY(0);
         }
+        transition: transform var(--animation);
     }
 
  &__box {

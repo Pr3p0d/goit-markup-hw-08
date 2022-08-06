@@ -215,7 +215,6 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__block {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -555,6 +554,18 @@ body {
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header-contact__mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header-contact__phone {
+    width: 10px;
+    height: 14px;
+  }
+}
 .header-contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +583,12 @@ body {
   color: var(--primery-text-color);
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header-contact__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 @media (min-width: 1200px) {
   .header-contact__link {
@@ -1160,12 +1177,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
 }
 .project__link:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project__link:hover, .project__link:focus .project-product__box {
+.project__link:hover .project-product__box, .project__link:focus .project-product__box {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
